@@ -3,9 +3,11 @@ name = "pyAdguard"
 version = "0.0.0.1"
 description = "Python Wrapper for the Adguard Home API"
 authors = [
-  { name="Lars Jelschen", email="mail@lars-jelschen.de" },
+    { name = "Lars Jelschen", email = "mail@lars-jelschen.de" },
 ]
-maintainers = [name="Lars Jelschen", email="mail@lars-jelschen.de"]
+maintainers = [
+    { name = "Lars Jelschen", email = "mail@lars-jelschen.de" }
+]
 license = "MIT"
 readme = "README.md"
 homepage = ""
