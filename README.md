@@ -12,6 +12,8 @@ https://github.com/AdguardTeam/AdGuardHome/blob/master/openapi/openapi.yaml
 ## Installation
 
 ```bash
+git clone https://github.com/ljelschen/pyadguard.git
+cd pyadguard
 pip install .
 ```
 
