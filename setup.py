@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/ljelschen/pyadguard",
     project_urls={
-        "Bug Tracker": "package issues URL",
+        "Bug Tracker": "https://github.com/ljelschen/pyadguard/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
