@@ -10,8 +10,8 @@ maintainers = [
 ]
 license = "MIT"
 readme = "README.md"
-homepage = ""
-repository = ""
+homepage = "https://github.com/ljelschen/pyadguard"
+repository = "https://github.com/ljelschen/pyadguard"
 documentation = "e"
 keywords = ["adguard home", "adguard", "api", "wrapper", "client"]
 classifiers = [
@@ -24,5 +24,10 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 packages = [
-    { include = "pyadguard", from = "src" },
+    { include = "src/pyadguard", from = "src" },
 ]
+
+
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
