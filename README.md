@@ -25,8 +25,30 @@ pip install .
 ```
 
 ## Usage
+Modify the given `sample.env` and rename the file to `.env`
 
-Examples are included in the examples folder.
+```py
+# %% imports
+from pyadguard import AdguardAPI
+from dotenv import dotenv_values
+
+config = dotenv_values(".env")
+
+# %% create an instance of AdguardAPI
+adguard = AdguardAPI(
+    host=config["ADGUARD_HOST"],
+    username=config["ADGUARD_USERNAME"],
+    password=config["ADGUARD_PASSWORD"],
+    backend="https"
+)
+# %% read the stats of the AdGuard Home instance
+
+# the url is /stats
+stats = adguard.stats.get()
+print(stats)
+```
+
+More examples are included in the examples folder.
 
 ## Changelog & Releases
 
@@ -48,7 +70,7 @@ The original setup of this repository is by Lars Jelschen.
 
 MIT License  
 
-Copyright (c) 2019-2025 Lars Jelschen
+Copyright (c) 2025 Lars Jelschen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
