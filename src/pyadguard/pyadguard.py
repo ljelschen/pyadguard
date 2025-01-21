@@ -1,9 +1,3 @@
-__author__ = "Lars Jelschen"
-__copyright__ = "(c) Lars Jelschen 2025"
-__version__ = "1.0.0"
-__license__ = "MIT"
-
-# spell-checker:ignore urlunsplit
 import json
 import logging
 import requests

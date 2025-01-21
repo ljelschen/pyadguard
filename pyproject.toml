@@ -1,14 +1,20 @@
-[tool.poetry]
+[project]
 name = "pyAdguard"
-version = "0.0.0.1"
 description = "Python Wrapper for the Adguard Home API"
-authors = ["Lars Jelschen <mail@lars-jelschen.de>"]
-maintainers = ["Lars Jelschen <mail@lars-jelschen.de>"]
-license = "MIT"
+dynamic = ["version"]
+authors = [
+  {name = "Lars Jelschen", email = "mail@lars-jelschen.de"},
+]
+maintainers = [
+  {name = "Lars Jelschen", email = "mail@lars-jelschen.de"}
+]
+dependencies = [
+  "python-dotenv",
+  "requests"
+]
+requires-python = ">= 3.8"
 readme = "README.md"
-homepage = "https://github.com/ljelschen/pyadguard"
-repository = "https://github.com/ljelschen/pyadguard"
-documentation = "https://github.com/ljelschen/pyadguard"
+license ={ file = "LICENSE.txt" }
 keywords = ["adguard home", "adguard", "api", "wrapper", "client"]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -19,17 +25,19 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-packages = [
-    { include = "src/pyadguard", from = "src" },
-]
+
+[project.urls]
+homepage = "https://github.com/ljelschen/pyadguard"
+repository = "https://github.com/ljelschen/pyadguard"
+documentation = "https://github.com/ljelschen/pyadguard"
 
 
 [build-system]
-requires = ['setuptools>=42']
-build-backend = 'setuptools.build_meta'
+requires = ["setuptools", "setuptools-scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/pyadguard/_version.py"
+local_scheme = "no-local-version"
 
 
-[tool.poetry.dependencies]
-python = "^3.11"
-python-dotenv = "1.0.1"
-requests = "2.32.3"
