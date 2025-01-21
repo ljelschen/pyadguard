@@ -2,17 +2,13 @@
 name = "pyAdguard"
 version = "0.0.0.1"
 description = "Python Wrapper for the Adguard Home API"
-authors = [
-    { name = "Lars Jelschen", email = "mail@lars-jelschen.de" },
-]
-maintainers = [
-    { name = "Lars Jelschen", email = "mail@lars-jelschen.de" }
-]
+authors = ["Lars Jelschen <mail@lars-jelschen.de>"]
+maintainers = ["Lars Jelschen <mail@lars-jelschen.de>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/ljelschen/pyadguard"
 repository = "https://github.com/ljelschen/pyadguard"
-documentation = "e"
+documentation = "https://github.com/ljelschen/pyadguard"
 keywords = ["adguard home", "adguard", "api", "wrapper", "client"]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -31,3 +27,9 @@ packages = [
 [build-system]
 requires = ['setuptools>=42']
 build-backend = 'setuptools.build_meta'
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "1.0.1"
+requests = "2.32.3"
