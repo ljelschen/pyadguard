@@ -39,5 +39,7 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools_scm]
 write_to = "src/pyadguard/_version.py"
 local_scheme = "no-local-version"
+"version_scheme" = "post-release"
 
-
+[tool.setuptools.package-dir]
+mypackage = "src/pyadguard"
